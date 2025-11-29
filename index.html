@@ -19,11 +19,19 @@
 </head>
 <body>
     <div class="presentation">
+        <!-- Logo flotante para todos los slides -->
+        <div class="logo-floating">
+            <img src="metrik-logo.png" alt="MéTRIK" class="logo-floating-img">
+        </div>
         <!-- SLIDE 1: PORTADA -->
         <div class="slide active" data-slide="1" role="region" aria-label="Slide 1 de 15: Portada">
             <div class="slide-container portada-container">
                 <!-- IMG: Fondo profesional abstrato con overlay oscuro -->
                 <div class="portada-background"></div>
+
+                <div class="logo-metrik-top">
+                    <img src="metrik-logo.png" alt="MéTRIK Logo" class="logo-img">
+                </div>
 
                 <div class="portada-content">
                     <h1 class="portada-title">SOENA</h1>
@@ -36,6 +44,9 @@
 
         <!-- SLIDE 2: AGENDA -->
         <div class="slide" data-slide="2" role="region" aria-label="Slide 2 de 15: Agenda">
+            <div class="logo-metrik-header">
+                <img src="metrik-logo.png" alt="MéTRIK Logo" class="logo-img-small">
+            </div>
             <h2 class="slide-title">HOY VAMOS A CUBRIR</h2>
             <div class="green-line"></div>
 
@@ -459,45 +470,67 @@
 
         <!-- SLIDE 14: INVERSIÓN -->
         <div class="slide" data-slide="14" role="region" aria-label="Slide 14 de 15: Inversión">
-            <h2 class="slide-title">INVERSIÓN</h2>
+            <h2 class="slide-title">PLAN DE INVERSIÓN</h2>
             <div class="green-line"></div>
 
-            <h4>OPCIÓN A: Sprint por Sprint</h4>
+            <h4>Paquete Completo: Transformación Operacional 6 Meses</h4>
+            <p style="color: var(--color-steel); margin-bottom: var(--spacing-lg);">
+                <strong>Inversión Total: $16.000.000</strong><br>
+                Plan de pagos flexible según flujo de caja y cumplimiento de entregables mensuales
+            </p>
+
             <table class="pricing-table">
                 <tbody>
                     <tr>
-                        <td>Sprint 0: Diagnóstico + Quick Win (15 días)</td>
-                        <td>$4.000.000</td>
+                        <td>Al iniciar (Kick-off + Diagnóstico)</td>
+                        <td>$1.500.000</td>
                     </tr>
                     <tr>
-                        <td>Sprint 1: Trazabilidad & Alertas (20 días)</td>
-                        <td>$6.000.000</td>
+                        <td>Mes 1 (Sprint 0 completado)</td>
+                        <td>$1.500.000</td>
                     </tr>
                     <tr>
-                        <td>Sprint 2: Eficiencia & Automatización (20 días)</td>
-                        <td>$8.000.000</td>
+                        <td>Mes 2 (Sprint 1 - Fase 1)</td>
+                        <td>$2.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Mes 3 (Sprint 1 - Fase 2)</td>
+                        <td>$2.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Mes 4 (Sprint 2 - Fase 1)</td>
+                        <td>$3.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Mes 5 (Sprint 2 - Fase 2)</td>
+                        <td>$3.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Mes 6 (Cierre y escalamiento)</td>
+                        <td>$3.000.000</td>
                     </tr>
                     <tr class="total-row">
-                        <td>TOTAL OPCIÓN A</td>
-                        <td>$18.000.000</td>
+                        <td>TOTAL INVERSIÓN</td>
+                        <td>$16.000.000</td>
                     </tr>
                 </tbody>
             </table>
 
             <div class="cta-box">
-                <h3>⭐ OPCIÓN B: Paquete Completo (RECOMENDADA)</h3>
-                <p>Sprints 0+1+2 completos:</p>
-                <p class="price">$16.000.000</p>
-                <p class="savings">Ahorro: $2.000.000</p>
-                <p class="duration">Duración total: 55 días hábiles (~2.5 meses)</p>
+                <h3>✅ Modalidad de Pago</h3>
+                <p>Los pagos se ejecutan contra el cumplimiento de entregables específicos de cada mes:</p>
+                <ul style="color: white; text-align: left; margin-top: var(--spacing-lg); list-style: none; padding-left: 0;">
+                    <li>✓ Diagnóstico y validación inicial</li>
+                    <li>✓ Implementación de trazabilidad</li>
+                    <li>✓ Sistema de alertas automáticas</li>
+                    <li>✓ Automatización de procesos</li>
+                    <li>✓ Training y documentación completa</li>
+                </ul>
             </div>
 
-            <div class="optional-box">
-                <strong>Sprint 3 (Escalamiento):</strong> $7.000.000<br>
-                Se define después Sprint 2 según resultados
-            </div>
-
-            <p class="payment-terms">Forma de pago: 50% al inicio de cada sprint / 50% contra entrega</p>
+            <p class="payment-terms">
+                <strong>Nota:</strong> Las fechas pueden ajustarse según cronograma interno de SOENA. Cada pago se ejecuta tras validar cumplimiento de entregables del período.
+            </p>
         </div>
 
         <!-- SLIDE 15: SIGUIENTE PASO -->
@@ -526,6 +559,15 @@
                         <li>¿Qué podemos aclarar ahora?</li>
                     </ul>
                 </div>
+            </div>
+
+            <div class="disclaimer-box">
+                <h4 style="margin-top: 0; margin-bottom: var(--spacing-sm);">Responsabilidad Compartida</h4>
+                <p style="margin: 0; font-size: 13px; line-height: 1.7;">
+                    <strong>Declaramos que:</strong> Como consultor especializado en transformación operacional, nuestro compromiso es facilitador: proporcionaremos entrenamiento integral, metodología probada y seguimiento cercano a su equipo en la implementación de MÉTRIK. Sin embargo, el éxito de la transformación depende fundamentalmente del compromiso y la adopción activa de los procesos por parte de toda su organización.
+                    <br><br>
+                    No podemos garantizar resultados si no existe plena voluntad organizacional de implementar los cambios recomendados. Nuestro rol es guiar; la ejecución es responsabilidad compartida entre consultor y equipo de SOENA.
+                </p>
             </div>
 
             <div class="contact-section">

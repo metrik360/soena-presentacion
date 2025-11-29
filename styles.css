@@ -193,6 +193,11 @@ body {
     z-index: 2;
 }
 
+.logo-metrik-top .logo-img {
+    filter: brightness(0) invert(1) !important;
+    opacity: 0.9 !important;
+}
+
 .logo-metrik-header {
     margin-bottom: var(--spacing-lg);
     display: flex;
@@ -1112,6 +1117,91 @@ p {
     font-size: 13px;
     color: var(--color-steel);
     margin: var(--spacing-lg) 0 0;
+}
+
+/* ===== PARTNERSHIP SLIDE ===== */
+.partnership-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: var(--spacing-2xl);
+}
+
+.partnership-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-2xl);
+    margin: var(--spacing-3xl) 0;
+    flex-wrap: wrap;
+}
+
+.logo-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-base);
+}
+
+.partnership-logo {
+    height: 120px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1));
+}
+
+.logo-label {
+    font-size: 18px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-carbon);
+    margin: 0;
+}
+
+.logo-tagline {
+    font-size: 13px;
+    color: var(--color-steel);
+    margin: 0;
+    text-align: center;
+}
+
+.partnership-connector {
+    font-size: 32px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-primary);
+    margin: 0 var(--spacing-lg);
+}
+
+.partnership-message {
+    text-align: center;
+    margin: var(--spacing-2xl) 0;
+    max-width: 700px;
+}
+
+.partnership-message h3 {
+    font-size: 24px;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-carbon);
+    margin: 0 0 var(--spacing-lg) 0;
+}
+
+.partnership-message p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--color-steel);
+    margin: 0;
+}
+
+.partnership-contact {
+    text-align: center;
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-2xl);
+    border-top: 2px solid var(--color-primary);
+}
+
+.partnership-contact p {
+    margin: 0;
 }
 
 /* ===== PAYMENT TERMS ===== */
